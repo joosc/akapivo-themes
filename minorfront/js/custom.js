@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 	
 	var collected = new Array();
+	var input_url = '';
 	
 	// ADD FUNCTIONALITY
 	$("[name='my-checkbox']").bootstrapSwitch();
@@ -65,6 +66,12 @@ jQuery(document).ready(function($) {
 	function get_enquete_id(){
 		var enquete_id = $('#enquete-wrapper').data('enquete-id');
 		return enquete_id;
+	}
+	function get_input_url(){
+		if(input_url == ''){
+			input_url = $('#update-url').val();
+		}
+		return input_url;
 	}
 	function get_vraag_id(input){
 		var vraag_array = input.split('-');
@@ -210,13 +217,13 @@ jQuery(document).ready(function($) {
 		
 		if(enquete_cookie !== null){
 			
-			
+			var url = get_input_url();
 			var unserialized = JSON.decode(enquete_cookie);
 			
 			console.log(enquete_cookie);
 			console.log(unserialized);
 			
-			$.get("http://be.minorndako:8888/enquete/"+enquete_id+"/save/"+enquete_cookie )
+			$.get(url+"/"+enquete_id+"/save/"+enquete_cookie )
 				.done(function( data ){
 						//alert("data back => "+data);
 						console.log(data);
