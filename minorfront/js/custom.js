@@ -40,12 +40,16 @@ jQuery(document).ready(function($) {
 		saveCachedData(event);
 	});	
 	
-	
 	// COLLECT INFO
 	function enquete_sliding_done(event){
 		var enquete_id = get_enquete_id();
 		var vraag_id = get_vraag_id(event.target.id);
-		var value = event.value;
+		
+		var waardezelf = event.value;
+		if(waardezelf.newValue !== undefined){
+			waardezelf = waardezelf.newValue;
+		}		
+		var value = waardezelf;
 		cacheAnswer(enquete_id,vraag_id,value,false);
 		update_enquete_view(enquete_id,vraag_id);
 	}
