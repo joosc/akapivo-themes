@@ -25,6 +25,12 @@ jQuery(document).ready(function($) {
 		$.doTimeout( 'doneSliding', 1000, function(){   
 			enquete_sliding_done(e);
 		}, true);
+		
+	});
+	$('.radio').on('click',function(e){
+		$.doTimeout( 'doneClicking', 1000, function(){   
+			enquete_radio_done(e);
+		}, true);
 	});
 	$("input[name='my-checkbox']").on('switchChange.bootstrapSwitch', function(event, state) {
 		$.doTimeout( 'doneSwitching', 1000, function(){
@@ -40,6 +46,7 @@ jQuery(document).ready(function($) {
 		saveCachedData(event);
 	});	
 	
+	
 	// COLLECT INFO
 	function enquete_sliding_done(event){
 		var enquete_id = get_enquete_id();
@@ -48,10 +55,19 @@ jQuery(document).ready(function($) {
 		var waardezelf = event.value;
 		if(waardezelf.newValue !== undefined){
 			waardezelf = waardezelf.newValue;
-		}		
+		}
+		console.log(waardezelf);
 		var value = waardezelf;
 		cacheAnswer(enquete_id,vraag_id,value,false);
 		update_enquete_view(enquete_id,vraag_id);
+	}
+	function enquete_radio_done(event){
+		var enquete_id = get_enquete_id();
+		var vraag_id = get_vraag_id(event.target.id);
+		var value = event.target.value;
+		cacheAnswer(enquete_id,vraag_id,value,true);
+		update_enquete_view(enquete_id,vraag_id);
+		console.log(value);
 	}
 	function enquete_typing_done(event){
 		var enquete_id = get_enquete_id();
@@ -95,6 +111,7 @@ jQuery(document).ready(function($) {
 		});
 	}
 	
+	
 	// AJAX UPDATE...
 	function update_enquete_view(enquete_id,vraag_id){
 		// current state vraag:
@@ -137,17 +154,17 @@ jQuery(document).ready(function($) {
 			
 			// 3. progress
 			// 3.1 : progress bar?
-			if($('#branch-'+branch_id+' .modal-progress .default-progressbar')){
-				console.log('PROG BAR.....');
-				var progressbar = $('#branch-'+branch_id+' .modal-progress .default-progressbar .progress-bar');
-				
+			if($('div[data-branch='+branch_id+'] .modal-progress .progressbar')){
+				var progressbar = $('div[data-branch='+branch_id+'] .progress-bar-tong');
 				console.log(progressbar);
+				console.log(branch_completed);
 				progressbar.css('width',branch_completed+'%');
 				//progressbar.tween('width',current_width,branch_completed+'%');
 				
 				
 				
 			}
+/*
 			// 3.2 : switching image
 			if($('#branch-'+branch_id+' .modal-progress .switching-image')){
 				console.log('SWITCH IMAGE.....');
@@ -158,6 +175,7 @@ jQuery(document).ready(function($) {
 					switching_image.removeAttr('data-completed');
 				}
 			}
+*/
 			
 			
 			
@@ -235,10 +253,7 @@ jQuery(document).ready(function($) {
 				
 				checkForCompletedBranches(enquete_id);					
 			});
-
 		}
-		
-		
 	}
  
 });

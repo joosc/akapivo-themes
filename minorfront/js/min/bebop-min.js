@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$("html, body").animate({scrollTop:$("#branch-10").position().top},{duration:2e3,queue:!1}),$("html, body").animate({scrollLeft:$("#branch-10").position().left},{duration:2e3,queue:!1})});

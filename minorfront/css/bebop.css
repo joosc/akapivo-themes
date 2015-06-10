@@ -1,0 +1,656 @@
+/* 1. De achtergrondtekening */
+body {
+  background-image: url('../images/bgr/Bebop_appBG.png');
+  background-position-x: 10px;
+  background-position-y: 84px;
+  background-repeat: no-repeat;
+  width: 7874px;
+  height: 5198px;
+}
+/* 2. Positie en sprite_image van de vragen */
+#enquete-wrapper {
+  position: relative;
+}
+div[id*="branch-"] {
+  position: absolute;
+  width: 1150px;
+  height: 1100px;
+  display: block;
+  background-color: transparent;
+  background-position-y: -2200px;
+}
+#branch-5 {
+  background-image: url('../images/sprites/Sprites_eten.png');
+  left: 3028px;
+  top: 2390px;
+  z-index: 22;
+}
+#branch-6 {
+  background-image: url('../images/sprites/Sprites_voetbal_konijn.png');
+  left: 4300px;
+  top: 4060px;
+  z-index: 38;
+}
+#branch-7 {
+  background-image: url('../images/sprites/Sprites_bus.png');
+  left: 4588px;
+  top: 1250px;
+  z-index: 14;
+}
+#branch-8 {
+  background-image: url('../images/sprites/Sprites_kleerkast.png');
+  left: 1706px;
+  top: 467px;
+  z-index: 3;
+}
+#branch-9 {
+  background-image: url('../images/sprites/Sprites_slaapkamer.png');
+  left: 1360px;
+  top: 421px;
+  z-index: 2;
+}
+#branch-10 {
+  background-image: url('../images/sprites/Sprites_gebouw.png');
+  left: 2381px;
+  top: 3038px;
+  z-index: 27;
+}
+#branch-11 {
+  background-image: url('../images/sprites/Sprites_trampoline.png');
+  left: 4663px;
+  top: 2704px;
+  z-index: 33;
+}
+#branch-12 {
+  background-image: url('../images/sprites/Sprites_voetbal_schidlpad.png');
+  left: 4300px;
+  top: 4060px;
+  z-index: 37;
+}
+#branch-13 {
+  background-image: url('../images/sprites/Sprites_evolutiegesprek_tafel.png');
+  left: 3975px;
+  top: 2888px;
+  z-index: 30;
+}
+#branch-14 {
+  background-image: url('../images/sprites/Sprites_opuitstap.png');
+  left: 3394px;
+  top: 4380px;
+  z-index: 42;
+}
+#branch-15 {
+  background-image: url('../images/sprites/Sprites_Living.png');
+  left: 2348px;
+  top: 1627px;
+  z-index: 12;
+}
+#branch-16 {
+  background-image: url('../images/sprites/Sprites_zakgeld.png');
+  left: 787px;
+  top: 2797px;
+  z-index: 26;
+}
+#branch-17 {
+  background-image: url('../images/sprites/Sprites_regels.png');
+  left: 2955px;
+  top: 1634px;
+  z-index: 13;
+}
+#branch-18 {
+  background-image: url('../images/sprites/Sprites_geloof.png');
+  left: 4006px;
+  top: 2388px;
+  z-index: 25;
+}
+#branch-19 {
+  background-image: url('../images/sprites/Sprites_DVZ.png');
+  left: 961px;
+  top: 3577px;
+  z-index: 34;
+}
+#branch-20 {
+  background-image: url('../images/sprites/Sprites_bebop_eten.png');
+  left: 2977px;
+  top: 2637px;
+  z-index: 23;
+}
+#branch-21 {
+  background-image: url('../images/sprites/Sprites_rechtzaal.png');
+  left: 6204px;
+  top: 1786px;
+  z-index: 15;
+}
+#branch-22 {
+  background-image: url('../images/sprites/Sprites_dossier.png');
+  left: 544px;
+  top: 2018px;
+  z-index: 16;
+}
+#branch-23 {
+  background-image: url('../images/sprites/Sprites_psycholoog.png');
+  left: 2684px;
+  top: 667px;
+  z-index: 4;
+}
+#branch-24 {
+  background-image: url('../images/sprites/Sprites_prive_kamer.png');
+  left: 1687px;
+  top: 201px;
+  z-index: 1;
+}
+#branch-25 {
+  background-image: url('../images/sprites/Sprites_sfeermeter_oranje.png');
+  left: 2300px;
+  top: 1327px;
+  z-index: 10;
+}
+#branch-26 {
+  background-image: url('../images/sprites/Sprites_begeleiding.png');
+  left: 1088px;
+  top: 1889px;
+  z-index: 18;
+}
+#branch-27 {
+  background-image: url('../images/sprites/Sprites_dokter.png');
+  left: 3658px;
+  top: 2453px;
+  z-index: 24;
+}
+#branch-28 {
+  background-image: url('../images/sprites/Sprites_IBGesprek.png');
+  left: 5202px;
+  top: 2898px;
+  z-index: 34;
+}
+#branch-29 {
+  background-image: url('../images/sprites/Sprites_logboek.png');
+  left: 814px;
+  top: 2317px;
+  z-index: 17;
+}
+#branch-30 {
+  background-image: url('../images/sprites/Sprites_gesprekmetouders.png');
+  left: 3968px;
+  top: 3766px;
+  z-index: 36;
+}
+#branch-31 {
+  background-image: url('../images/sprites/Sprites_aankomst.png');
+  left: 2001px;
+  top: 3550px;
+  z-index: 35;
+}
+#branch-32 {
+  background-image: url('../images/sprites/Sprites_intake.png');
+  left: 3327px;
+  top: 3323px;
+  z-index: 28;
+}
+#branch-33 {
+  background-image: url('../images/sprites/Sprites_evolutiegesprek_ouders.png');
+  left: 3975px;
+  top: 2888px;
+  z-index: 31;
+}
+#branch-34 {
+  background-image: url('../images/sprites/Sprites_consulent.png');
+  left: 4152px;
+  top: 3196px;
+  z-index: 32;
+}
+#branch-35 {
+  background-image: url('../images/sprites/Sprites_stad.png');
+  left: 6462px;
+  top: 3974px;
+  z-index: 40;
+}
+#branch-36 {
+  background-image: url('../images/sprites/Sprites_rugzak.png');
+  left: 5988px;
+  top: 4120px;
+  z-index: 40;
+}
+#branch-37 {
+  background-image: url('../images/sprites/Sprites_klachtenbus.png');
+  left: 1794px;
+  top: 1367px;
+  z-index: 6;
+}
+#branch-38 {
+  background-image: url('../images/sprites/Sprites_suggesties.png');
+  left: 1754px;
+  top: 1702px;
+  z-index: 7;
+}
+#branch-39 {
+  background-image: url('../images/sprites/Sprites_bobop_slaapkamer.png');
+  left: 1641px;
+  top: 898px;
+  z-index: 3;
+}
+#branch-40 {
+  background-image: url('../images/sprites/Sprites_naardestad.png');
+  left: 6011px;
+  top: 4067px;
+  z-index: 39;
+}
+#branch-41 {
+  background-image: url('../images/sprites/Sprites_sfeermeter_groen.png');
+  left: 2300px;
+  top: 1327px;
+  z-index: 9;
+}
+#branch-42 {
+  background-image: url('../images/sprites/Sprites_sfeermeter_paars.png');
+  left: 2300px;
+  top: 1327px;
+  z-index: 11;
+}
+#branch-43 {
+  background-image: url('../images/sprites/Sprites_sfeermeter_geel.png');
+  left: 2300px;
+  top: 1327px;
+  z-index: 8;
+}
+#branch-44 {
+  background-image: url('../images/sprites/Sprites_hobbykiezen.png');
+  left: 4957px;
+  top: 4085px;
+  z-index: 39;
+}
+#branch-45 {
+  background-image: url('../images/sprites/Sprites_bebop_stad.png');
+  left: 6570px;
+  top: 3937px;
+  z-index: 41;
+}
+#branch-46 {
+  background-image: url('../images/sprites/Sprites_klachtenbus.png');
+  left: 1794px;
+  top: 1367px;
+  z-index: 5;
+}
+#branch-47 {
+  background-image: url('../images/sprites/Sprites_bewonersvergadering.png');
+  left: 1874px;
+  top: 2162px;
+  z-index: 20;
+}
+#branch-48 {
+  background-image: url('../images/sprites/Sprites_brochure.png');
+  left: 3591px;
+  top: 3471px;
+  z-index: 29;
+}
+#branch-49 {
+  background-image: url('../images/sprites/Sprites_verschillendetalen.png');
+  left: 1955px;
+  top: 2071px;
+  z-index: 21;
+}
+#branch-50 {
+  background-image: url('../images/sprites/Sprites_bebop_leiding.png');
+  left: 1429px;
+  top: 2322px;
+  z-index: 19;
+}
+/* 3. Variabele statussen voor vragen en plaatsing iconen */
+.branch > a {
+  position: relative;
+  margin: none;
+  padding: none;
+}
+.branch .thumbnail {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 0;
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+}
+.branch[data-hasquestions="1"] {
+  background-position-y: -1100px;
+}
+.branch[data-hasquestions="1"] .thumbnail {
+  background-image: url('../images/sprites/icons.png');
+  background-position-y: -200px;
+}
+.branch[data-hasquestions="1"].branch[data-branch-completed="100"] {
+  background-position-y: -2200px;
+}
+.branch[data-hasquestions="1"].branch[data-branch-completed="100"] .thumbnail {
+  background-position-y: -400px;
+}
+.branch[data-hasquestions="1"].branch[data-branch-completed="0"] {
+  background-position-y: 0px;
+}
+.branch[data-hasquestions="1"].branch[data-branch-completed="0"] .thumbnail {
+  background-position-y: 0px;
+}
+.branch[data-hasquestions="1"]#branch-20 .thumbnail,
+.branch[data-hasquestions="1"]#branch-39 .thumbnail,
+.branch[data-hasquestions="1"]#branch-45 .thumbnail,
+.branch[data-hasquestions="1"]#branch-50 .thumbnail {
+  background-position-y: -800px;
+  height: 110px;
+}
+/* 4. Positie van de iconen */
+.branch > a .thumbnail[data-branch="5"] {
+  top: 0px;
+  left: 100px;
+}
+.branch > a .thumbnail[data-branch="6"] {
+  top: -30px;
+  left: 270px;
+}
+.branch > a .thumbnail[data-branch="7"] {
+  top: 210px;
+  left: 80px;
+}
+.branch > a .thumbnail[data-branch="8"] {
+  top: -17px;
+  left: -33px;
+}
+.branch > a .thumbnail[data-branch="9"] {
+  top: 170px;
+  left: -35px;
+}
+.branch > a .thumbnail[data-branch="10"] {
+  top: 235px;
+  left: 270px;
+}
+.branch > a .thumbnail[data-branch="11"] {
+  top: 200px;
+  left: -33px;
+}
+.branch > a .thumbnail[data-branch="12"] {
+  top: 100px;
+  left: -50px;
+}
+.branch > a .thumbnail[data-branch="13"] {
+  top: -35px;
+  left: 330px;
+}
+.branch > a .thumbnail[data-branch="14"] {
+  top: 40px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="15"] {
+  top: 225px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="16"] {
+  top: 150px;
+  left: -50px;
+}
+.branch > a .thumbnail[data-branch="17"] {
+  top: -30px;
+  left: -50px;
+}
+.branch > a .thumbnail[data-branch="18"] {
+  top: 0px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="19"] {
+  top: 0px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="20"] {
+  top: -100px;
+  left: 80px;
+}
+.branch > a .thumbnail[data-branch="21"] {
+  top: 320px;
+  left: 100px;
+}
+.branch > a .thumbnail[data-branch="22"] {
+  top: 120px;
+  left: -50px;
+}
+.branch > a .thumbnail[data-branch="23"] {
+  top: 183px;
+  left: -30px;
+}
+.branch > a .thumbnail[data-branch="24"] {
+  top: 10px;
+  left: 390px;
+}
+.branch > a .thumbnail[data-branch="25"] {
+  top: -50px;
+  left: -35px;
+}
+.branch > a .thumbnail[data-branch="26"] {
+  top: 200px;
+  left: 250px;
+}
+.branch > a .thumbnail[data-branch="27"] {
+  top: 30px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="28"] {
+  top: 0px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="29"] {
+  top: 0px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="30"] {
+  top: 0px;
+  left: -60px;
+}
+.branch > a .thumbnail[data-branch="31"] {
+  top: 0px;
+  left: 160px;
+}
+.branch > a .thumbnail[data-branch="32"] {
+  top: 100px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="33"] {
+  top: 85px;
+  left: -43px;
+}
+.branch > a .thumbnail[data-branch="34"] {
+  top: 0px;
+  left: -60px;
+}
+.branch > a .thumbnail[data-branch="35"] {
+  top: 1px;
+  left: 1px;
+}
+.branch > a .thumbnail[data-branch="36"] {
+  top: 0px;
+  left: -70px;
+}
+.branch > a .thumbnail[data-branch="37"] {
+  top: 100px;
+  left: -30px;
+}
+.branch > a .thumbnail[data-branch="38"] {
+  top: 01px;
+  left: -50px;
+}
+.branch > a .thumbnail[data-branch="39"] {
+  top: -100px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="40"] {
+  top: -80px;
+  left: 100px;
+}
+.branch > a .thumbnail[data-branch="41"] {
+  top: -50px;
+  left: -35px;
+}
+.branch > a .thumbnail[data-branch="42"] {
+  top: -50px;
+  left: -35px;
+}
+.branch > a .thumbnail[data-branch="43"] {
+  top: -50px;
+  left: -35px;
+}
+.branch > a .thumbnail[data-branch="44"] {
+  top: 0px;
+  left: -50px;
+}
+.branch > a .thumbnail[data-branch="45"] {
+  top: -45px;
+  left: 65px;
+}
+.branch > a .thumbnail[data-branch="46"] {
+  top: 100px;
+  left: -30px;
+}
+.branch > a .thumbnail[data-branch="47"] {
+  top: 100px;
+  left: 0px;
+}
+.branch > a .thumbnail[data-branch="48"] {
+  top: -44px;
+  left: -46px;
+}
+.branch > a .thumbnail[data-branch="49"] {
+  top: -30px;
+  left: 50px;
+}
+.branch > a .thumbnail[data-branch="50"] {
+  top: -100px;
+  left: 0px;
+}
+/* 5. Modals algemeen */
+.vragen-dropdown .nav li.dropdown {
+  width: 100%;
+}
+/* 6. Opmaak vragen */
+.progressbar {
+  height: 100px;
+  width: 555px;
+  margin: 20px 0 0 20px;
+}
+.progressbar .beboplinks {
+  display: block;
+  float: left;
+  width: 66px;
+  height: 60px;
+  background: url(../images/bebopscore/progress-01.png) left top no-repeat transparent;
+}
+.progressbar .tongcontainer {
+  display: block;
+  width: 459px;
+  float: left;
+  margin-top: 34px;
+}
+.progressbar .ijsjerechts {
+  float: right;
+  display: block;
+  width: 26px;
+  height: 61px;
+  margin-top: 20px;
+  background: url(../images/bebopscore/progress-03.png) left top no-repeat transparent;
+}
+.progressbar .progress-bar-tong {
+  display: block;
+  float: left;
+  min-width: 1px;
+  height: 16px;
+  background: url(../images/bebopscore/progress-04.png) left top repeat-x transparent;
+  position: relative;
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.progressbar .progress-bar-tong:after {
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 16px;
+  background: url(../images/bebopscore/progress-02.png) left top no-repeat transparent;
+  content: "";
+  top: 0px;
+  right: -10px;
+}
+.bebopradio input[type="radio"] {
+  display: none;
+}
+.bebopradio input[type="radio"] + label {
+  display: block;
+  position: relative;
+  height: 180px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.bebopradio input[type="radio"] + label .scorebord {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80px;
+  top: 50px;
+  left: 0;
+}
+.bebopradio .score-1 label {
+  background: url(../images/bebopscore/scoresprite-01.png) center top transparent no-repeat;
+}
+.bebopradio .score-1 label .scorebord {
+  background: url(../images/bebopscore/scoresprite-06.png) center top transparent no-repeat;
+}
+.bebopradio .score-2 label {
+  background: url(../images/bebopscore/scoresprite-02.png) center top transparent no-repeat;
+}
+.bebopradio .score-2 label .scorebord {
+  background: url(../images/bebopscore/scoresprite-07.png) center top transparent no-repeat;
+}
+.bebopradio .score-3 label {
+  background: url(../images/bebopscore/scoresprite-03.png) center top transparent no-repeat;
+}
+.bebopradio .score-3 label .scorebord {
+  background: url(../images/bebopscore/scoresprite-08.png) center top transparent no-repeat;
+}
+.bebopradio .score-4 label {
+  background: url(../images/bebopscore/scoresprite-04.png) center top transparent no-repeat;
+}
+.bebopradio .score-4 label .scorebord {
+  background: url(../images/bebopscore/scoresprite-09.png) center top transparent no-repeat;
+}
+.bebopradio .score-5 label {
+  background: url(../images/bebopscore/scoresprite-05.png) center top transparent no-repeat;
+}
+.bebopradio .score-5 label .scorebord {
+  background: url(../images/bebopscore/scoresprite-10.png) center top transparent no-repeat;
+}
+.bebopradio input[type="radio"]:checked + label .scorebord {
+  top: 30px;
+}
+.bebopradio input[type="radio"] + label .scorebord,
+.bebopradio input[type="radio"]:checked + label .scorebord {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.yesnoradio input[type="radio"] {
+  display: none;
+}
+.yesnoradio input[type="radio"] + label {
+  display: block;
+  height: 250px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.yesnoradio .yes input[type="radio"] + label {
+  background: url(../images/bebopscore/janee-01.png) center -235px transparent no-repeat;
+}
+.yesnoradio .no input[type="radio"] + label {
+  background: url(../images/bebopscore/janee-02.png) center -235px transparent no-repeat;
+}
+.yesnoradio input[type="radio"]:checked + label {
+  background-position-y: 0;
+}

@@ -21,6 +21,7 @@ regions[footer]   	= 'Footer'
 stylesheets[all][] = css/bootstrap-slider.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/bootstrap-switch.min.css
+stylesheets[all][] = css/bebop.css
 
 
 ; For information on choosing the desired method, please read the Drupal
@@ -54,6 +55,7 @@ stylesheets[all][] = css/bootstrap-switch.min.css
  
  scripts[] = 'js/MooTools-Core-1.5.1.js'
  scripts[] = 'js/custom.js'
+ scripts[] = 'js/bebop.js'
  scripts[] = 'js/bootstrap-slider.js'
  scripts[] = 'js/bootstrap-switch.min.js'
 
